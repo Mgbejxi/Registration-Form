@@ -3,9 +3,9 @@ box-sizing: border-box;
 border: 1px solid aliceblue;
 margin-left: 300px;
 height: 100vh;
-width: 60%;; 
+width: 55%;; 
 padding-left: 25px;
-padding-right: 45px;
+padding-right: 25px;
 background-color: aliceblue;  
 background-color: aliceblue;  
 }
@@ -15,6 +15,7 @@ background-color: aliceblue;
     text-align: center;
     font-weight: 800;
     padding-top: 50px;
+    padding-bottom: 10px;
 
     
 }
@@ -24,23 +25,32 @@ background-color: aliceblue;
     justify-content: space-evenly;
     flex-direction: row;
     padding-bottom: 30px; 
+    transform: 0.5s;
 }
 
-
+img {
+    width: 48px; 
+    height: 48px;
+}
+img:hover {
+    width: 80%; 
+    height: 80%;
+    
+}
 .list li {
-    font-size: 2rem;
     padding-bottom: 0.6rem;
     
 }
  
 input {
-    width: 80%;
+    width: 85%;
     height: 2rem;
 }
 #list-name {
     border: none;
-    border-bottom: 8px solid black;
+    border-bottom: 2px solid rgb(195, 183, 183);
 }
+
 li {
     list-style: none;    
 }
@@ -48,31 +58,66 @@ li {
 .header {
     padding-top: 2px;
     background-color: white;
-    padding-bottom: ;
 }
+    
 
 .form {
     padding-top: 10px;
-    padding-bottom: 300px;
+    padding-bottom: 200px;
+    padding-left: 20px;
     background-color: white;
 }
 
-#button{
-    font-size: 3.2rem;
+#button {
+    font-size: 1.2rem;
     color: white;
-   background-color: blue;
+   background-color: rgb(112, 112, 245);
+   border: none;
    font-weight: 600;
-   width: 60%;
+   width: 25%;
    height: 40px;
    border-radius: 3px;
-   margin-left: 250px;
    margin-top: 20px;
+   margin-left: 240px;
    
-
 }
 
+@media only screen and (max-width: 400px){
 
-.info input {
-    font-size: 16px;
+   body {
+       margin-left: 20px;
+       padding-left: 5px;
+       padding-right: 5px;
+       border-left: 30px;
+       border-right: 30px;
+       width: 90%;
+    }
+
+   #button {
+position: absolute;
+    width: 25%;
+    margin-left: 30vw
     
 }
+}
+   
+@media only screen and (max-width: 680px){
+
+    body {
+        margin-left: 30px;
+        padding-left: 25px;
+        padding-right: 25px;
+        border-left: 30px;
+        border-right: 30px;
+        width: 90%;
+     }
+ 
+    #button {
+ position: absolute;
+     width: 25%;
+     margin-left: 25vw
+
+     
+ }
+
+
